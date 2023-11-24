@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.CB1 = new System.Windows.Forms.ComboBox();
+            this.BT1 = new System.Windows.Forms.Button();
+            this.TB1 = new System.Windows.Forms.TextBox();
+            this.TB2 = new System.Windows.Forms.TextBox();
+            this.TB3 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -46,56 +46,61 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Basic Calculator";
             // 
-            // comboBox1
+            // CB1
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.CB1.FormattingEnabled = true;
+            this.CB1.Items.AddRange(new object[] {
             "+",
             "-",
             "*",
             "/"});
-            this.comboBox1.Location = new System.Drawing.Point(102, 111);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 1;
+            this.CB1.Location = new System.Drawing.Point(102, 111);
+            this.CB1.Name = "CB1";
+            this.CB1.Size = new System.Drawing.Size(121, 21);
+            this.CB1.TabIndex = 1;
             // 
-            // button1
+            // BT1
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(56, 346);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(221, 55);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Compute";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.BT1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BT1.Location = new System.Drawing.Point(56, 346);
+            this.BT1.Name = "BT1";
+            this.BT1.Size = new System.Drawing.Size(221, 55);
+            this.BT1.TabIndex = 2;
+            this.BT1.Text = "Compute";
+            this.BT1.UseVisualStyleBackColor = true;
+            this.BT1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox1
+            // TB1
             // 
-            this.textBox1.Location = new System.Drawing.Point(56, 71);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(221, 34);
-            this.textBox1.TabIndex = 3;
+            this.TB1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB1.Location = new System.Drawing.Point(56, 71);
+            this.TB1.Multiline = true;
+            this.TB1.Name = "TB1";
+            this.TB1.Size = new System.Drawing.Size(221, 34);
+            this.TB1.TabIndex = 3;
+            this.TB1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox2
+            // TB2
             // 
-            this.textBox2.Location = new System.Drawing.Point(56, 138);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(221, 34);
-            this.textBox2.TabIndex = 4;
+            this.TB2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
+            this.TB2.Location = new System.Drawing.Point(56, 138);
+            this.TB2.Multiline = true;
+            this.TB2.Name = "TB2";
+            this.TB2.Size = new System.Drawing.Size(221, 34);
+            this.TB2.TabIndex = 4;
+            this.TB2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox3
+            // TB3
             // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.MenuText;
-            this.textBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.textBox3.Location = new System.Drawing.Point(56, 192);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(221, 148);
-            this.textBox3.TabIndex = 5;
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB3.BackColor = System.Drawing.SystemColors.MenuText;
+            this.TB3.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.TB3.Location = new System.Drawing.Point(56, 192);
+            this.TB3.Multiline = true;
+            this.TB3.Name = "TB3";
+            this.TB3.Size = new System.Drawing.Size(221, 148);
+            this.TB3.TabIndex = 5;
+            this.TB3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // FrmBasicCalculator
             // 
@@ -103,15 +108,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(325, 450);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.TB3);
+            this.Controls.Add(this.TB2);
+            this.Controls.Add(this.TB1);
+            this.Controls.Add(this.BT1);
+            this.Controls.Add(this.CB1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "FrmBasicCalculator";
-            this.Text = "Form1";
+            this.Text = "Basic Calculator";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -120,11 +125,11 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.ComboBox CB1;
+        private System.Windows.Forms.Button BT1;
+        private System.Windows.Forms.TextBox TB1;
+        private System.Windows.Forms.TextBox TB2;
+        private System.Windows.Forms.TextBox TB3;
     }
 }
 
